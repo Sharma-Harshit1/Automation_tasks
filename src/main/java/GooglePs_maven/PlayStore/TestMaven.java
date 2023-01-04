@@ -22,7 +22,8 @@ public class TestMaven {
 	}
 	@Test
 	public void Top_Movies() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//span[span[text()='Movies']]")).click();
 //		List<WebElement> Harshit =driver.findElements(By.xpath("//div[div[div[@aria-label='Rated 4.5 stars out of five stars'] and child::span[text()='₹50.00']]]//div[1]//child::span[1]"));
 //		//List<WebElement> Harshit =driver.findElements(By.xpath("//div[contains(@aria-label, 'Rated 4.1 stars out of five stars')] and child::span[text()='₹50.00']]]//div[1]//child::span[1]"));
